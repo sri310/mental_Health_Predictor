@@ -20,7 +20,6 @@ certify==1.0rc6
 click==4.1
 colorama==0.2.5
 cycler==0.10.0
-debtagshw==0.1
 decorator==4.0.11
 defer==1.0.6
 dirspec==13.10
