@@ -66,7 +66,6 @@ pysmbc==1.0.14.1
 python-apt===0.9.3.5ubuntu1
 python-dateutil==2.6.0
 python-debian===0.1.21-nmu2ubuntu2
-python-openid==2.2.5
 pytz==2016.10
 pyxdg==0.25
 pyzmq==16.0.2
