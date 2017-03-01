@@ -94,5 +94,5 @@ virtualenv==15.1.0
 wheel==0.24.0
 widgetsnbextension==1.2.6
 wsgiref==0.1.2
-xdiagnose==3.6.3build2
+xdiagnose===3.6.3build2
 zmq==0.0.0
