@@ -1,0 +1,63 @@
+        body{
+        margin-left:10em;
+        margin-right:7em;
+        }
+        h1{
+        color:maroon;
+        text-align:center;
+        }
+        label.qlabel{
+        font-weight : bold;
+          }
+
+        fieldset.ull ul{
+        list-style : none;
+        margin-left:2em;
+        margin-right:2em;
+        }
+        fieldset.ull ul li{
+        line-height:2em;
+        }
+        .qchoice{
+        cursor:pointer;
+        }
+
+        #sub {
+        position: absolute;
+        padding:5px 15px;
+        background:#ccc;
+        border:0 none;
+        cursor:pointer;
+        border-radius: 5px;
+        margin-right:40%
+        }
+        .negativeAlert {
+        padding: 20px;
+        background-color: #f44336;
+        color: black;
+        }
+        .positiveAlert {
+        padding: 20px;
+        background-color: #DFF2BF;
+        color: black;
+        }
+        .neutralAlert {
+        padding: 20px;
+        background-color: #FEEFB3;
+        color: black;
+        }
+    .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .closebtn:hover {
+        color: black;
+    }
+
