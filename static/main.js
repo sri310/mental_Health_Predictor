@@ -42,17 +42,17 @@
 
 
                                     if(results.result =='Optimistic and happy with life'){
-                                        $('.positiveAlert').text(' You are optimistic and happy with life').show();
+                                        $('.positiveAlert').show();
                                         $('.negativeAlert').hide();
                                         $('.neutraleAlert').hide();
                                     }
                                     else if (results.result =='Unaffected about life'){
-                                         $('.neutralAlert').text('You are unaffected about life').show();
+                                         $('.neutralAlert').show();
                                          $('.negativeAlert').hide();
                                          $('.positiveAlert').hide();
                                      }
                                      else if (results.result  =='Mentally distressed'){
-                                           $('.negativeAlert').text('You are mentally distressed').show();
+                                           $('.negativeAlert').show();
                                            $('.neutralAlert').hide();
                                            $('.positiveAlert').hide();
 
