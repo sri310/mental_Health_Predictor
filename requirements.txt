@@ -58,7 +58,6 @@ piston-mini-client==0.7.5
 prompt-toolkit==1.0.13
 pyOpenSSL==0.15.1
 pycrypto==2.6.1
-pycups==1.9.66
 pyparsing==2.1.10
 pyserial==2.6
 pysmbc==1.0.14.1
