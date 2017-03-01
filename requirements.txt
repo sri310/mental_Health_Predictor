@@ -76,7 +76,6 @@ singledispatch==3.4.0.3
 six==1.10.0
 sklearn==0.0
 subprocess32==3.2.7
-system-service==0.1.6
 terminado==0.6
 testpath==0.3
 tornado==4.4.2
