@@ -42,19 +42,22 @@
 
 
                                     if(results.result =='Optimistic and happy with life'){
-                                        $('.positiveAlert').show();
-                                        $('.negativeAlert').hide();
-                                        $('.neutraleAlert').hide();
-                                    }
+                                       $('#positiveAlert').show();
+                                       $("html, body").animate({ scrollTop: $("#positiveAlert").offset().top }, 1000);
+                                       $('#negativeAlert').hide();
+                                        $('#neutraleAlert').hide();
+                                          }
                                     else if (results.result =='Unaffected about life'){
-                                         $('.neutralAlert').show();
-                                         $('.negativeAlert').hide();
-                                         $('.positiveAlert').hide();
+                                         $('#neutralAlert').show();
+                                          $("html, body").animate({ scrollTop: $("#neutralAlert").offset().top }, 1000);
+                                         $('#negativeAlert').hide();
+                                         $('#positiveAlert').hide();
                                      }
                                      else if (results.result  =='Mentally distressed'){
-                                           $('.negativeAlert').show();
-                                           $('.neutralAlert').hide();
-                                           $('.positiveAlert').hide();
+                                           $('#negativeAlert').show();
+                                            $("html, body").animate({ scrollTop: $("#negativeAlert").offset().top }, 1000);
+                                           $('#neutralAlert').hide();
+                                           $('#positiveAlert').hide();
 
                                      }
                                      else{
@@ -78,17 +81,23 @@
                                     $('input[name=q14]').attr('checked',false);
                                     $('input[name=q15]').attr('checked',false);
 
-
-
-
-
                                     },
                          error : function (error){
                                     console.log(error);
-                                    }
+                                    },
+                              beforeSend: function(){
+                                $('#loading').show();
+                            },
+                          complete: function(){
+                                $('#loading').hide();
+                              }
 
 
                           });
-               });
+
+
+                      });
+
+
 
             });
