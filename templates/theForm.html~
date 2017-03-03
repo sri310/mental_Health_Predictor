@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8">
     <title>Survey</title>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
@@ -20,8 +20,9 @@
 <form method="post" action="/" onsubmit="return false">
     {{form.hidden_tag()}}
     <br>
-    <fieldset class="ull" style="border : 1px solid black;margin-top:1em;margin-right:1em; padding: 1em; padding-top:3em">
-
+    <div style="text-align:center">
+    <fieldset class="ull">
+    <div style="text-align:left">
     {{form.q1.label(class_="qlabel")}}
     {{form.q1(class_="qchoice")}}<br>
 
@@ -66,22 +67,29 @@
 
     {{form.q15.label(class_="qlabel")}}
     {{form.q15(class_="qchoice")}}<br>
+    </div>
+
     </fieldset>
+    </div>
     <br><br>
     <div class="wrap">
         <input type="submit" value="submit" align="center" id="sub">
     </div>
+    <br>
+    <div id="loading" style="display:none; margin-left:45%;">
+     <img src="../static/ajax-loader.gif" alt="Loading" />
+    </div>
     <br><br>
 
-    <div class="negativeAlert"  style="display:none;">
+    <div id="negativeAlert"  style="display:none;" tabindex="1">
     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
     <strong>You are mentally distressed</strong>
     </div>
-    <div class="positiveAlert" style="display:none;">
+    <div id="positiveAlert" style="display:none;">
     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
     <strong> You are optimistic and happy with life</strong>
     </div>
-    <div class="neutralAlert" style="display:none;">
+    <div id="neutralAlert" style="display:none;">
     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         <strong>You are unaffected about life</strong>
     </div>
