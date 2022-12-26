@@ -81,7 +81,7 @@ traitlets==4.3.2
 tweepy==3.5.0
 urllib3==1.7.1
 virtualenv==15.1.0
-wheel==0.24.0
+wheel==0.38.1
 widgetsnbextension==1.2.6
 wsgiref==0.1.2
 zmq==0.0.0
